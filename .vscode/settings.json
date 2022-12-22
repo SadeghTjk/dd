@@ -1,0 +1,5 @@
+{
+    "nuxt.isNuxtApp": true,
+    "scss.validate": false,
+    "css.validate": false
+}

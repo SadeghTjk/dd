@@ -1,0 +1,18 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+:root{
+    --body-bg: rgb(5,0,23);
+    --logo-purple: #9933ff;
+    --logo-blue: #9cf;
+}
+
+body{
+    background-color: var(--body-bg);
+}
+
+.button-bg{
+    --tw-bg-opacity: 1;
+    background-color: rgb(5,0,23,var(--tw-bg-opacity));
+}

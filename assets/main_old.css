@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --secondary: #01b8e9;
+}
+html{
+    scroll-behavior: smooth;
+}
+a, a:hover {
+    text-decoration: none;
+}
+button.navbar-toggler img {
+    filter: invert(1);
+}
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link a {
+    /* color: rgb(153 153 255); */
+    color: #99ccff;
+    letter-spacing: 0.05rem;
+}
+.navbar-light .navbar-nav .nav-link a:hover {
+    color: #9999ff;
+    /* color: rgb(78 78 171); */
+}
+a.nuxt-link-exact-active {
+    color: #9999ff !important;
+    /* color: #99ccff; */
+    font-weight: 600;
+    /* background: -webkit-linear-gradient(45deg,#a852fd, #9dceff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+.row.align-center span{
+    font-size: 2rem;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    background: -webkit-linear-gradient(45deg,#a852fd, #9dceff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navbar{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    box-shadow: 0 0 6px 0 #00000030;
+    background-color: #050017;
+}
+#portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.v-progress-linear__determinate.orange {
+    background-color: #ff9800 !important;
+    border-color: #ff9800 !important;
+}
+.btn-outline-secondary {
+    z-index: 11;
+    position: absolute;
+    color: #01b8e9 !important;
+    border-color: #01b8e9;
+    bottom: 16px;
+    width: 55%;
+}
+.btn-outline-secondary:hover {
+    color: black !important;
+    background-color: #01b8e9;
+    border-color: #01b8e9;
+}
+.skills_section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 100px;
+    justify-items: center;
+}
+
+@media only screen and (min-width: 600px) {
+    .skills_section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .portfolio_container{
+        height: max-content;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .skills_section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/** ANIMATIONS **/
+
+[data-aos="example-anim1"] {
+  filter: blur(5px);
+  transition-property: filter;
+}
+[data-aos="example-anim1"].aos-animate {
+    filter: blur(0px);
+  }
